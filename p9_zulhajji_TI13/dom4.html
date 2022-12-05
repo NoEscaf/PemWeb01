@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan dua bilangan</title>
+</head>
+<body>
+    <form>
+        <h2>Membuat Penjumlahan </h2>
+            <input type="text" id="pertama" onchange="math()" />
+        <br>
+        +
+        <br>
+        <input type="text" id="kedua" onchange="math()"/>
+        <br>
+        =
+        <br>
+        <input type="text" id="result"/>
+    </form>
+
+<script>
+    function math() {
+      let pertama = document.getElementById("pertama").value;
+      let kedua = document.getElementById("kedua").value;
+      let result = parseInt(pertama) + parseInt(kedua);
+         document.getElementById('result').value = result;
+      }
+</script>
+
+</body>
+</html>
