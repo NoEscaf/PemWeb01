@@ -1,0 +1,13 @@
+body {
+    background-color: wheat;
+}
+
+#header {
+    background-color: orange;
+    text-align: center;
+}
+
+#header blockquote {
+    background-color: yellow;
+    text-align: center;
+}

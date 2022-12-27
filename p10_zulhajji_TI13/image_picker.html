@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Image Picker</title>
+    <script>
+        function gambar() {
+            let drop_img = document.getElementById("dropdown_img").value;
+            let image = document.getElementById("image");
+
+            if (drop_img == "gorilla"){
+                image.setAttribute("src","https://awsimages.detik.net.id/community/media/visual/2016/05/30/9b70078d-4fad-4325-b37f-d7e27801071c_11.jpg?w=700&q=90")
+                alert("Ini gambar gorilla")
+            }else if (drop_img == "singa"){
+                image.setAttribute("src","https://media.istockphoto.com/id/464528655/id/foto/close-up-anak-singa-melihat-kamera-10-minggu.jpg?s=612x612&w=0&k=20&c=axmgEHlUBSX68ygDUQ15gDyY8qTOhoFQBWJjTM4Q3Wg=");
+                alert("Ini gambar singa")
+            }else if (drop_img == "elang"){
+                image.setAttribute("src","https://3.bp.blogspot.com/-OBtPyT0G1-U/V02pzOlT8SI/AAAAAAAAAj4/fzeQ78HCyAM90e8D_MC2Vd6T5O4nWLsmQCLcB/s1600/08.jpg")
+                alert("Ini gambar elang")
+            }else {
+                alert("Anda tidak memilih gambar")
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <select id="dropdown_img" onchange="gambar()">
+        <option hidden>---Pilih Gambar---</option>
+        <option value="gorilla">Gorilla</option>
+        <option value="singa">Singa</option>
+        <option value="elang">Elang</option>
+    </select>
+    <br>
+    <img alt="gambar" id="image">
+</body>
+</html>
